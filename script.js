@@ -23,3 +23,9 @@ Tarefas.addEventListener('click', function(evento) {
         }
     }
 });
+
+Tarefas.addEventListener('dblclick', function(evento) {
+    if (evento.target.tagName === 'P'){
+        Tarefas.removeChild(evento.target);
+    }
+});
